@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.sidebar {
+    position:fixed;
+    left: -250px;
+    width: 250px;/*Changed from 250px to fit content*/
+    height: 100%;
+    background:#7fffd4;
+    transition: all 0.4s ease;
+}
+.sidebar header{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: orange; /* remeber to change this background color!*/
+    user-select: none;
+}
+
+.sidebar ul a{
+    display:block;
+    color: black;
+    font-size: 1.5em;
+    height: fit-content;/*Resolved block height issue by making element height fit content contained. Line height style not affected by this*/
+    width: 100%;
+    line-height: 65px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom:  1px solid black;
+    transition: 0.4s;
+}
+.sidebar ul a:hover {
+    padding-left: 50px;
+    background-color: #54caa3;
+}
+#check {
+    display:none;
+}
+label #btn {
+    position:absolute;
+    cursor: pointer;
+    background:#54caa3;
+}
+label #btn {
+    left:40px;
+    top:25px;
+    font-size: 35px;
+    color: whitesmoke;
+    border-radius: 3px;
+    padding: 3px;
+    transition: all 0.5s;
+}
+label #cancel {
+    position:absolute;
+    cursor: pointer;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 1111;
+    left: -195px;
+    top: 15px;
+    font-size: 35px;
+    color: whitesmoke;
+    border-radius: 3px;
+    padding: 3px;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;   
+}
+#check:checked ~ label #cancel {
+    left: 195px;
+    transition: all 0.5s ease;
+}
+
+/* CSS FOR THE REST OF THE PAGE */
+body {
+    background-color: #a5d5ed;
+    font-family:'Segoe UI';
+    white-space: pre-line;
+    /* align-content: flex-end; */
+}
+#check:checked ~ section{
+    margin-left:250px;
+    transition: all 0.5s ease;
+}
+
+.center-page {
+    background: url(Coastline-8.jpg);    
+    background-size: cover;
+    text-align: center;
+    height: 750px;
+    width: auto;
+    border: none;  /* I need to figure out how to vertically center my text */
+}
+
+h1 {
+    font-family: 'Brush Script MT';
+    /* position:relative; */
+    color: #73c0e1;
+    font-size: 3.5em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+p, h2, h3 {
+    text-align: center;
+    padding: 3% 5%;
+}
+p {
+    background-color:whitesmoke;
+    border:1px solid;
+    border-radius:12px;
+}
+.secondary-button {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 0px 10%;
+    font-family: 'Brush Script MT';
+    font-weight: 500;
+    font-size:27.5px;
+    border-radius: 30px;
+}
+/* 
+.navbar {
+    background-color: aquamarine;
+    border: 2px solid;
+    border-color: antiquewhite;
+    max-width: fit-content;
+    position: absolute;
+    height: 200%;
+}
+.menu-items {
+    position:relative;
+    max-width:fit-content;
+    list-style-type: none;
+    font-family: 'Brush Script MT';
+    font-size: 1.25em;
+    padding: 0px;
+    display: table;    
+}
+
+.menu-items a {
+    width: 60px;
+    color: black;
+    display: block;
+    padding: 50px 70px;
+    text-decoration: none;
+    overflow:hidden;
+    -webkit-transition:width .2s linear;
+    transition:width .2s linear;
+}
+.menu-items a:nth-child(n) {
+    border-top: 2px solid #03A2A2;
+}
+.menu-items:last-child{
+    border-bottom: 2px solid #03A2A2;
+}
+
+.menu-items a:hover {
+    background-color: rgb(84, 202, 163);
+    width: 250px;
+    border-top: 2px solid #03A2A2;
+}
+
+.menu-items a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+*/

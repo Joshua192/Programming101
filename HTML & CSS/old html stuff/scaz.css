@@ -1,0 +1,12 @@
+body {
+    background-color: blueviolet;
+    text-shadow: black;
+    text-align: center;
+    display: block;
+}
+
+div {
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}

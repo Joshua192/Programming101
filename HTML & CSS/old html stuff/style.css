@@ -1,0 +1,29 @@
+body {
+	user-select: none;
+	text-align: center;
+	white-space: pre-wrap;
+	background: rgb(52, 155, 189);
+}
+
+.paragraph {
+	font: 14px bold;
+	text-align: left;
+}
+
+img {
+	display: inline-block;
+	margin: auto auto auto auto;
+	padding: 16px 16px;
+	width: 300px;
+	height: 250px;
+	scale: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-style: oblique;
+}
+
+button {
+	align-items: center;
+}

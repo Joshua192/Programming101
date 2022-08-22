@@ -1,0 +1,46 @@
+package co1105.cw2.jo189;
+
+public abstract class Activity extends Object implements Comparable<Activity>{
+
+    private static int activityCounter = 0;
+    protected final int activityID;
+    protected final int time;
+    protected double effort;
+
+    
+    Activity(int t)throws InvalidActivityException{
+    	
+        this.activityID=++activityCounter;
+        this.time = t;
+        
+        if(this.time <= 0) {
+        	throw new InvalidActivityException("Recorded time must be greater than 0s");
+        }
+    }
+    
+    public int getID(){
+        return this.activityID;
+    }
+
+    public double getEffort(){
+        return this.effort;
+    }
+
+    public int getTime(){
+        return this.time;
+    }
+
+	public int compareTo(Activity other) {
+		
+		return Double.compare(this.getEffort(), other.getEffort());
+	}
+
+	
+	public abstract boolean equals(Object o);
+
+	
+	public abstract int hashCode();
+
+	
+	public abstract String toString();
+}

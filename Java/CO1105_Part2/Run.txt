@@ -1,0 +1,79 @@
+package co1105.cw2.jo189;
+
+import java.util.Objects;
+
+public class Run extends Activity{
+    private int distance;
+    private int time;
+    private double distancekm;
+    private double timemin;
+    private float averagespeed;
+
+    Run(int d, int t)throws InvalidActivityException{
+    	
+        super(t);
+        this.time = t;
+        this.distance = d;
+        effort = (double)4 * this.distance / t;
+        averagespeed = this.distance/this.time;
+        
+        if(this.distance <= 0 || this.distance >= 100000) {
+        	throw new InvalidActivityException("Distance must be between 0m and 100000m");
+        }
+        
+        if(this.time <= 0) {
+        	throw new InvalidActivityException("Recorded time must be greater than 0s");
+        }
+        
+        if(averagespeed >= 20.0) {
+        	throw new InvalidActivityException("Recorded time and distance are not plausible");
+
+        }
+    }
+
+    public int getDistance(){
+        return this.distance;
+    }
+    
+    private double getDistancekm() {
+    	distancekm = (double)this.distance/1000;
+    	return distancekm;
+    }
+    
+    private double gettimeMin() {
+    	timemin = (double)time/60;
+    	return timemin;
+    }
+
+    public String toString(){
+    	if(activityID<10) {
+            return String.format("R0%d : effort score %4s (%4skm in %4sminutes)", activityID,String.format("%.1f",getEffort()),String.format("%.1f",getDistancekm()),String.format("%.1f",gettimeMin()));
+    	}
+    	else{
+            return String.format("R%d : effort score %4s (%4skm in %4sminutes)", activityID,String.format("%.1f",getEffort()),String.format("%.1f",getDistancekm()),String.format("%.1f",gettimeMin()));
+    	}
+    }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(distance, time);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Run other = (Run) obj;
+		return distance == other.distance && time == other.time;
+	}
+
+	
+	
+
+    
+    
+}

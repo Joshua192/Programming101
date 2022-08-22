@@ -1,0 +1,354 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+}
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../Portfolio-creation/img/wind-energy-7342177_1920.jpg);
+	background-size: cover;
+	background-position: center;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 20px;
+	background-color: #ffffff;
+	
+}
+.hamburger{
+	align-content: right;
+	background-color: transparent;
+	display: none;
+	color: #fff;
+	background-color: #4fc143;
+	cursor:pointer;
+}
+.hamburger:focus {
+	outline:none;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 15px;
+}
+nav .navigation_bar{
+	color: #42ab49;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	padding: 10px 25px;
+}
+
+nav .navigation_bar:hover{
+	transition: 0.6s;
+	border: 2px solid;
+	background-color: #42ab49;
+	color: #ffffff;
+}
+.logo{
+	color: #42ab49;
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.btn{
+	background-color:#4fc143;
+	color: #ffffff;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform 0.4s;
+}
+.btn:hover{
+	transform: scale(1.2);
+
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 8%;
+	transform:translateY(-50);
+}
+h1 {
+	color: #42ab49;
+	margin: 20px 0px 20px;
+	font-size: 75px;
+}
+h3 {
+	color: #42ab49;
+	font-size: 25px;
+	margin-bottom: 50px;
+
+}
+h4 {
+	color: #42ab49;
+	letter-spacing: left;
+	font-size: 20px;
+}
+.newsletter form{
+	width: 380px;
+	max-width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.newsletter form input:first-child {
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: transparent;
+	outline: none;
+	border-radius: 30px 0px 0px 30px;
+}
+
+.newsletter button:not(:last-child) {
+	border-right: none;/* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.newsletter:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.newsletter form input:last-child {
+		position: absolute;
+		outline: none;
+		border: none;
+		padding: 14px 30px 14px 30px;
+		border-radius: 0px 30px 30px 0px;
+		background-color: #4fc143;
+		color: #ffffff;
+}
+.newsletter form input:last-child:hover {
+	transition: 0.4s;
+	border: transparent;
+	color: #42ab49;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+.about {
+	width: 100%;
+	padding: 100px;
+	background-color: #ffffff;
+}
+.about img{
+	height: auto;
+	width: 430px;
+}
+.about-text {
+	width: 550px;
+}
+.main{
+	width:1130px;
+	max-width:95%;
+	margin:0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2 {
+	color:#42ab49;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color:#42ab49;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 22px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color:#154734;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color: #4fc143;
+	color:#ffffff;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: 0.4s;
+	font: helvetica;
+}
+button:hover {
+	background-color: transparent;
+	border: 2px solid #4fc143;
+	color: #4fc143;
+	cursor: pointer;
+}
+.service {
+	background: #101010;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2 {
+	color:#42ab49;
+	font-size:75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card {
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: #ffffff;
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i {
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #4fc143;
+}
+h5{
+	color:#42ab49;
+	font-size:23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color:#154734fc;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 25px;
+}
+.card .button {	
+	background-color: #4fc143;
+	color:#ffffff;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: 0.4s;
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #4fc143;
+	cursor: pointer;
+	color: #4fc143;
+}
+.contact-me{
+	width: 100%;
+	height: 290px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+.contact-me p{
+	color: #42ab49;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.contact-me .button-two{
+	background-color:#4fc143;
+	color: #ffffff;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.contact-me .button-two:hover{
+	background-color: transparent;
+	color: #4fc143;
+	border: 2px solid #4fc143;
+	cursor: pointer;
+}
+footer{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	background: #101010;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+footer p:nth-child(1){
+	font-size: 30px;
+	color: #42ab49;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+footer p:nth-child(2){
+	color: #42ab49;
+	font-size: 17px;
+	width: 500px;
+	text-align: center;
+	line-height: 26px;
+}
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #4fc143;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.2);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#4fc143;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+@media screen and (max-width: 800px) {
+	.btn {width:100;}
+	
+	.logo{ width:80px;}
+	
+	.navigation_bar{padding: 10px;
+		display:none;}
+	
+	.header{padding-bottom: 0;}
+	
+	.hamburger{display:block;}
+	
+	.navigation-bar.show {display:flex;}
+	}
