@@ -8,8 +8,18 @@
 // console.log(typeof undefinedVar);// output: undefined. not an invalid or program breaking error. just not doing anything for the program.
 
 
-const a = [1,2,3,4];
-const b = a;
-b.push(5)
-console.log(a);
+// let a ;
+// a = [1,2,3,4];
+// let c = [3,2,6,9];
+// const b = c;
+// b.push(5);
+// console.log(a);
 // console.log(b);
+
+const now = 2037;
+const ageJonas = now - 1991
+const ageSarah = now - 2018
+
+const averageAge = (ageJonas + ageSarah)/ 2
+console.log(ageJonas, ageSarah);
+console.log("averageAge:", averageAge)
